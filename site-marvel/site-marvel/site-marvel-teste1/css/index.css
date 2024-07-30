@@ -1,0 +1,1237 @@
+* {
+    font-size: 10px;
+}
+
+/* CONFIGURAÇÃO MENU MOBILE */
+.desktopNav-container {
+    display: none;
+}
+
+.head {
+    position: relative;
+    display: grid;
+    grid-template-columns: 15% 15% 15%;
+    justify-content: space-between;
+    background-color: #22262a;
+    height: 52px;
+}
+
+.mobile-menu, .logo {
+    display: grid;
+    justify-content: center;
+}
+
+.mobile-menu {
+    align-content: center;
+}
+
+/* CLASSES E IDs JS - MENU MOBILE TOGGLE */
+#nav, .navigation, #nav-close {
+    display: none;
+}
+
+.navigation, .mobile-nav, .nav-close {
+    z-index: 80;
+}
+
+.navigation, .mobile-nav {
+    left: 0;
+    top: 0;
+}
+
+.navigation {
+    height: 100vh;
+    width: 100vw;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+}
+
+.mobile-nav, .nav-close {
+    background-color: #22262a;
+    position: absolute;
+}
+
+.mobile-nav {
+    width: 100%;
+    display: block;
+}
+
+.mobile-nav-container {
+    width: 100%;
+    padding: 0;
+}
+
+.nav-close {
+    padding: 20px 30px;
+    max-width: 375px;;
+}
+
+.icon-svg-white-stroke {
+    stroke: #fff;
+}
+
+.menu-nav-item {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 15px 0;
+    margin-top: 60px;
+    margin-bottom: -60px;
+    color: #fff;
+    cursor: default;
+    display: grid;
+    grid-template-columns: 70% 10%;
+    justify-content: space-around;
+    font: normal 18px/24px "DINNextW01-Regular", "Trebuchet MS", Helvetica, Arial, sans-serif;
+}
+
+.icon-svg-red-stroke {
+    stroke: #e62429;
+}
+/* FIM CLASSES E IDs JS - MENU MOBILE TOGGLE */
+
+.color-svg-menu {
+    fill: #fff;
+}
+
+.search, .color-svg-search {
+    stroke: #fff;
+    fill: #22262a;
+}
+
+.search {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+/* FIM CONFIGURAÇÃO MENU MOBILE */
+
+/* CONTEÚDO SLIDER PRINCIPAL */
+.slider, .slider-figure {
+    background-color: #151515;
+}
+
+.slider-figure, .slider-image {
+    width: 100%;
+}
+
+.slider-figure {
+    height: 200px;
+    position: relative;
+}
+
+.slider-image, .slider-image2, .slider-image3, .slider-image4, .slider-image5 {
+    height: 100%;
+    background-position: top;
+    background-size: cover;
+}
+
+.slider-image {
+    background-image: url("../images/captainmarvel.jpg");
+}
+
+.slider-image2 {
+    background-image: url("../images/capmarv.jpg");
+}
+
+.slider-image3 {
+    background-image: url("../images/cloakdagger.jpg");
+}
+
+.slider-image4 {
+    background-image: url("../images/goose.jpg");
+}
+
+.slider-image5 {
+    background-image: url("../images/avngrs_swps.jpg");
+}
+
+.slider-content {
+    margin: 50px 0 0;
+    padding: 0 30px 220px;
+}
+
+.slider_headline {
+    color: #fff;
+    font-family: "DINNextW01-CondensedMedium", "Trebuchet MS", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 2.8em;
+    letter-spacing: 2px;
+}
+
+.cta-link {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.cta-btn {
+    background-color: #e62429;
+    padding: 15px 45px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 16px;
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: "DINNextW01-CondensedMedium", "Trebuchet MS", Helvetica, Arial, sans-serif;
+    display: inline-block;
+    clip-path: polygon(0% 35%, 15% 0%, 85% 0%, 100% 0, 100% 15%, 100% 65%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
+}
+/* FIM CONTEÚDO SLIDER PRINCIPAL */
+
+/* IMG ADVERTISEMENT xD */
+.adv-xD {
+    display: none;
+}
+/* FIM IMG ADVERTISEMENT xD */
+
+/* IMAGEM HERO, LOGO E CTAs */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+    background-color: #151515;
+    clip-path: polygon(0 0,0 100%,100% 92%,100% 0);
+}
+
+.image-hero, .content-hero {
+    position: relative;
+}
+
+.image-hero {
+    height: 280px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/hero_captain_marvel.jpg");
+    transition: .5s ease;
+}
+
+.content-hero {
+    padding: 100px 0 60px;
+}
+
+.align-img {
+    display: grid;
+    justify-content: center;
+}
+
+.description_content-hero {
+    margin: 0 0 25px;
+    color: #fff;
+    font: normal 14px/22px "DINNextW01-Regular", "Trebuchet MS", Helvetica, Arial, sans-serif;
+}
+
+.cta-btn-light {
+    background-color: #151515;
+    cursor: pointer;
+    font-weight: 700;
+    border: 1px solid #fff;
+    display: inline-block;
+}
+/* FIM IMAGEM HERO, LOGO E CTAs */
+
+/* CARD MOVIES E COMICS*/
+.movie-scenes, .article-comics {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 65% 65% 65% 65%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+/* CONFIGURAÇÕES SCROLLBAR */
+::-webkit-scrollbar {
+    height: 3px;
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e5e5e5; 
+    height: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e62429; 
+}
+/* FIM CONFIGURAÇÕES SCROLLBAR */
+
+.container-card, .hero-container {
+    padding: 30px 60px;
+}
+
+.card {
+    grid-row-gap: 20px;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.card-title, .card-description {
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+.card-title {
+    color: #e62429;
+    font-family: "DINNextW01-CondensedMedium", "Trebuchet MS", Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.card-description {
+    color: #151515;
+    font-family: "DINNextW01-Regular", "Trebuchet MS", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 18px;
+}
+/* FIM CARD MOVIES E COMICS*/
+
+/* IMAGEM HERO MARVEL 80s, TEXTO E CTA */
+.image-hero-80s {
+    position: relative;
+    width: 100%;
+    height: 280px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/marvel_80_years.jpg");
+    transition: .5s ease;
+}
+
+.title-hero {
+    color: #fff;
+    font-family: "DINNextW01-CondensedMedium","Trebuchet MS",Helvetica,Arial,sans-serif;
+    font-size: 3em;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+
+.div-80years {
+    padding-top: 60px;
+}
+/* FIM IMAGEM HERO MARVEL 80s, TEXTO E CTA */
+
+/* FEATURED CHARACTERS */
+.featured-characters {
+    padding: 10px 0 30px 0;
+}
+
+.slider-feat {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1240px;
+    overflow: hidden;
+    transition: .3s ease;
+}
+
+.title-content {
+    padding: 0 0 0 20px;
+}
+
+.space-comics {
+    display: grid;
+    grid-row-gap: 10px;
+}
+
+.h3-title {
+    position: relative;
+    font-size: 3em;
+    letter-spacing: 2px;
+    padding: 20px 0px 30px 0;
+}
+
+.h3-title:before {
+    background-color:#c6a972;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    -webkit-transform: rotate(-45deg) skewX(45deg);
+    transform: rotate(-45deg) skewX(45deg);
+    width: 25px;
+    top: 5px;
+    left: 51px;
+}
+
+.h3-title:after {
+    background-color:#c6a972;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    -webkit-transform: rotate(-45deg) skewX(45deg);
+    transform: rotate(-45deg) skewX(45deg);
+    width: 20px;
+    top: 55px;
+    left: 1px;
+}
+
+.slider_wrapper {
+    overflow: hidden;
+    height: 100%;
+}
+
+.slider_container {
+    position: relative;
+    max-width: 1240px;
+    top: 17px;
+    margin: -17px 0 0;
+    padding: 10px 30px 0;
+    display: block;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 16% 16% 16% 16% 16% 16%;
+    grid-column-gap: 150px;
+}
+
+.card, .card_v2 {
+    position: relative;
+    display: grid;
+}
+
+.card_v2 {
+    grid-row-gap: 0;
+    width: 180px;
+    clip-path: polygon(100% 0, 100% 92%, 87% 100%, 0 100%, 0 0);
+}
+
+.fig-card, .fig-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.fig-card {
+    height: 170px;
+}
+
+.fig-card:after {
+    content: "";
+    height: 4px;
+    background-color: #e62429;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.fig-img {
+    transform: scaleX(1);
+    transition: all .2s linear;
+    object-position: top center;
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.body-card {
+    background-color: #151515;
+    color: #37474f;
+    transition: color .3s;
+    position: relative;
+    height: 145px;
+    padding: 16px 24px 17px 16px;
+}
+
+.body-card-headline {
+    color: #fff;
+    font-size: 1.8em;
+    letter-spacing: 1px;
+    line-height: 18px;
+}
+
+.h3-title, .body-card-headline, .footer-lineText {
+    text-transform: uppercase;
+    font-family: "DINNextW01-CondensedMedium","Trebuchet MS",Helvetica,Arial,sans-serif;
+}
+
+.footer-card {
+    position: absolute;
+    bottom: 30px;
+    padding: 16px 24px 0 0;
+}
+
+.footer-lineText {
+    color: #c3c3c3;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    line-height: 12px;
+    transition: all .17s ease-in-out;
+}
+
+.card-feed {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/* FIM FEATURED CHARACTERS */
+
+/* CLASSES MAIN JS */
+.data-comics, .comics-layout {
+    display: grid;
+}
+
+.comics-layout {
+    grid-row-gap: 20px;
+    grid-column-gap: 175px;
+    grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+    padding: 10px 30px 50px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.data-comics {
+    grid-row-gap: 10px;
+    grid-auto-columns: min-content;
+}
+
+.comics-title, .comics-price {
+    font-size: 1.6em;
+}
+
+.comics-title {
+    color: #151515;
+    font-family: "DINNextW01-Regular", "Trebuchet MS", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 18px;
+    padding: 0 0 5px;
+}
+
+.comics-price {
+    color: #999;
+    font-family: "DINNextW01-CondensedMedium","Trebuchet MS",Helvetica,Arial,sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.error-getError {
+    color: #ff0000;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: "DINNextW01-Regular", "Trebuchet MS", Helvetica, Arial, sans-serif;
+    display: grid;
+    justify-content: center;
+}
+/* FIM CLASSES MAIN JS */
+
+/* FOOTER LOGO E MENU */
+.foot {
+    background-color: #151515;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 38px;
+}
+
+.main-footer-content, .main-footer-link {
+    display: block;
+}
+
+.main-footer-content {
+    width: 100%;
+    max-width: 1240px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin: 0 auto;
+}
+
+.main-footer-links {
+    border-bottom: 1px solid #282828;
+    padding-bottom: 26px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.main-footer-logo, .main-footer-column {
+    display: grid;
+}
+
+.main-footer-logo {
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.icon-svg {
+    width: 35px;
+    fill: #151515;
+}
+
+.main-footer-primary-links, .main-footer-secondary-links {
+    font-family: "DINNextW01-Regular", "Trebuchet MS", Helvetica, Arial, sans-serif;
+    display: inline-block;
+}
+
+.list {
+    width: 100%;
+}
+
+.main-footer-primary-links {
+    font-weight: 800;
+}
+
+.main-footer-link {
+    font-size: 13px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.main-footer-link:not(:last-of-type) {
+    margin-bottom: 25px;
+}
+
+.main-footer-link a {
+    color: #fff;
+}
+
+.main-footer-column {
+    grid-template-columns: 50% 50%;
+}
+/* FIM FOOTER LOGO E MENU */
+
+/* FOOTER REDES SOCIAIS */
+.hidden-mobile {
+    display: none;
+}
+
+.main-footer-follow {
+    border-bottom: #282828;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.main-footer-title {
+    font-family: "DINNextW01-CondensedMedium","Trebuchet MS",Helvetica,Arial,sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.4em;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.social-links {
+    display: grid;
+    grid-template-rows: 1px;
+    grid-template-columns: 12% 12% 12% 12% 12% 12% 12%;
+    justify-content: space-between;
+}
+
+.footer-social-img {
+    line-height: 1;
+    padding: 0;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.icon-svg-gray-fill {
+    fill: #999;
+}
+/* FIM FOOTER REDES SOCIAIS */
+
+@media (min-width: 375px) {
+    .slider-figure {
+        height: 290px;
+    }
+
+    .slider_container {
+        grid-column-gap: 120px;
+    }
+
+    .card_v2 {
+        width: 150px;
+    }
+}
+
+@media (min-width: 394px) {
+    .cta-link {
+        display: inline-block;
+    }
+
+    .slider_headline {
+        display: block;
+    }
+
+    .slider_container {
+        grid-column-gap: 100px;
+    }
+
+    .movie-scenes, .article-comics {
+        grid-template-columns: 60% 60% 60% 60%;
+    }
+
+    .card_v2 {
+        width: 130px;
+    }
+}
+
+@media (min-width: 601px) {
+    .slider-figure {
+        height: 400px;
+    }
+
+    .image-hero {
+        height: 440px;
+    }
+
+    .image-hero-80s {
+        height: 440px;
+    }
+
+    .title-hero {
+        font-size: 4em;
+    }
+
+    .card_v2 {
+        width: 150px;
+    }
+
+    .fig-card {
+        height: 190px;
+    }
+
+    .slider_container {
+        grid-column-gap: 80px;
+    }
+
+    .body-card {
+        height: 180px;
+    }
+
+    .comics-layout {
+        grid-column-gap: 160px;
+    }
+
+    .movie-scenes, .article-comics {
+        grid-template-columns: 40% 40% 40% 40%;
+    }
+
+    .main-footer-links {
+        display: grid;
+        grid-template-columns: 25% 50%;
+    }
+
+    .icon-svg {
+        width: 80px;
+    }
+}
+
+@media (min-width: 701px) {
+    .slider_container {
+        grid-column-gap: 95px;
+    }
+
+    .card_v2 {
+        width: 180px;
+    }
+
+    .comics-layout {
+        grid-column-gap: 155px;
+    }
+
+    .movie-scenes, .article-comics {
+        grid-template-columns: 35% 35% 35% 35%;
+    }
+}
+
+@media (min-width: 801px) {
+    .card_v2 {
+        width: 195px;
+    }
+
+    .movie-scenes, .article-comics {
+        grid-template-columns: 30% 30% 30% 30%;
+    }
+}
+
+@media (min-width: 839px) {
+    .mobile-menu {
+        display: none;
+    }
+
+    .head {
+        display: none;
+    }
+
+    /* HEADER DESK */
+    .desktopNav-container {
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+
+    .desktopNav {
+        width: 100%;
+        position: relative;
+        background-color: #22262a;
+        color: #fff;
+        font-family: "DINNextW01-Regular", "Trebuchet MS", Helvetica, Arial, sans-serif;
+        font-size: 12px;
+    } 
+
+    .desktopNav-upper {
+        height: 52px;
+        border-bottom: 1px solid #393939;
+        padding: 0 20px;
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .desktopNav-tabLogoContainer {
+        max-width: 1200px;
+        margin: auto;
+        width: 100%;
+        box-sizing: border-box;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .insider.desktopNav_tabContainer {
+        z-index: 1;
+    }
+
+    .desktopNav_tab {
+        display: inline-flex;
+        box-sizing: border-box;
+        border-left: 1px solid #393939;
+        border-right: 1px solid #393939;
+        height: 51px;
+        font-family: "DINNextW01-Regular", "Trebuchet MS", Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 16px;
+        text-transform: uppercase;
+    }
+    
+    .desktopNav_tab:hover {
+        background: #151515;
+    }
+
+    .user-menu {
+        position: relative;
+        display: block;
+        font-family: "DINNextW01-Regular", "Trebuchet MS", Helvetica, Arial, sans-serif;
+    }
+
+    .user-menu-profile {
+        height: 51px;
+        display: inline-flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        flex-direction: row;
+        -webkit-box-align: center;
+        align-items: center;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 0 25px;
+        cursor: pointer;
+    }
+
+    .user-menu-avatar {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        margin: 0 8px 0 0;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .user-menu-avatarMsg {
+        font-family: "DINNextW01-Regular", "Trebuchet MS", Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 16px;
+        text-transform: uppercase;
+    }
+
+    .points {
+        color: #e8b63e;
+    }
+
+    .points span {
+        font-size: 9px;
+    }
+
+    .fillSvg {
+        fill: #fff;
+    }
+
+    .desktopNav-logo {
+        -webkit-box-pack: center;
+        justify-content: center;
+        margin: auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 52px;
+        width: 130px;
+    }
+
+    .icon-svg {
+        fill: #151515;
+    }
+
+    .desktopNav-right-links {
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        box-orient: horizontal;
+        box-direction: normal;
+        flex-direction: row;
+        z-index: 1;
+        font-family: "DINNextW01-Regular", "Trebuchet MS", Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 16px;
+        text-transform: uppercase;
+    }
+
+    .desktopNav_tab.mastercard {
+        line-height: .9;
+        -webkit-box-align: center;
+        align-items: center;
+        border-right: none;
+        color: #fff;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .icon-svg-black-stroke {
+        stroke: #151515;
+    }
+
+    .desktopNav_tab.mastercard svg {
+        height: 17px;
+        margin-right: 10px;
+        margin-top: 1px;
+    }
+
+    .desktopNav_tab.search {
+        -webkit-box-align: center;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .desktopNav_tab.search span.icon-search {
+        width: 19px;
+        height: 17px;
+    }
+
+    .icon-svg.icon-search {
+        fill: none;
+    }
+    
+    .icon-svg-black-stroke {
+        stroke: #151515;
+    }
+
+    .icon-svg-card {
+        width: 40px;
+    }
+
+    .desktopNav_tab.search svg {
+        width: 19px;
+        height: 17px;
+        stroke: #fff;
+    }
+
+    .desktopNav-lower {
+        height: 40px;
+        text-align: center;
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .desktopNav-linkContainer {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .desktopNav-linkWrapper {
+        text-transform: uppercase;
+        font-weight: 800;
+        padding: 0 18px;
+        margin: 0 auto;
+        cursor: pointer;
+        list-style: none;
+    }
+
+    .desktopNav-link {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        height: 100%;
+        box-sizing: border-box;
+        border-bottom: 2px solid transparent;
+        font-family: "DINNextW01-Regular", "Trebuchet MS", Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 16px;
+        text-transform: uppercase;
+        background-color: #22262a;
+        color: #fff;
+    }
+    /* FIM HEADER DESK */
+
+    /* CONTEÚDO SLIDER PRINCIPAL */
+    .slider {
+        position: relative;
+    }
+
+    .slider-figure {
+        position: relative;
+        width: 100%;
+        min-height: 410px;
+        max-height: 640px;
+        height: 63vh;
+        order: inherit;    
+    }
+
+    .slider-content {
+        position: absolute;
+        top: 20%;
+        left: 0;
+    }
+
+    .slider_headline {
+        font-size: 5em;
+    }
+    /* FIM CONTEÚDO SLIDER PRINCIPAL */
+
+    /* IMG ADVERTISEMENT xD */
+    .adv-xD {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    /* FIM IMG ADVERTISEMENT xD */
+
+    /* IMAGEM HERO, LOGO E CTAs */
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        clip-path: none;
+    }
+
+    .hero:before {
+        border-bottom: 500px solid #151515;
+        border-right: 160px solid transparent;
+        content: '';
+        height: 0;
+        left: 48.99%;
+        position: absolute;
+        transition: .5s ease;
+        width: 0;
+        z-index: 1;
+    }
+
+    .image-hero {
+        width: 50%;
+        height: 500px;
+        background-position: 50%;
+        float: right;
+    }
+
+    .content-hero {
+        padding: 0;
+        position: absolute;
+        top: 30%;
+        left: 15%;
+    }
+
+    .hero-container {
+        position: absolute;
+        top: 55%;
+        left: 5%;
+    }
+
+    .description_content-hero {
+        line-height: 1.5;
+        width: 60%;
+        margin: 0 0 35px;
+        font-size: 18px;
+    }
+
+    .cta-btn-light {
+        background-color: #151515;
+    }
+    /* FIM IMAGEM HERO, LOGO E CTAs */
+
+    /* CARD MOVIES E COMICS*/
+    .movie-scenes, .article-comics {
+        grid-template-columns: 28% 28% 28% 28%;
+    }
+    /* CARD MOVIES E COMICS*/
+
+    /* IMAGEM HERO MARVEL 80s, TEXTO E CTA */
+    .image-hero-80s {
+        width: 50%;
+        height: 500px;
+        background-position: 50%;
+        float: right;
+    }
+
+    .title-hero {
+        width: 60%;
+        font-size: 4em;
+        line-height: 1;
+    }
+
+    .div-80years {
+        position: absolute;
+        top: 25%;
+    }
+    /* FIM IMAGEM HERO MARVEL 80s, TEXTO E CTA */
+
+    /* FEATURED CHARACTERS */
+    .slider_container {
+        grid-column-gap: 10px;
+    }
+
+    .card_v2 {
+        width: 120px;
+    }
+    /* FIM FEATURED CHARACTERS */
+
+    /* FOOTER LOGO E MENU */
+    .main-footer-links {
+        border-bottom: none;
+        padding-bottom: 0;
+        display: grid;
+        grid-template-columns: 20% 40% 39%;
+    }
+
+    .list {
+        width: 50%;
+        line-height: 15px;
+    }
+    /* FIM FOOTER LOGO E MENU */
+
+    /* FOOTER REDES SOCIAIS */
+    .hidden-desk{
+        display: none;
+    }
+    
+    .hidden-mobile {
+        display: block;
+    }
+    /* FIM FOOTER REDES SOCIAIS */
+}
+
+@media (min-width: 992px) {
+    .cta-btn:hover {
+        background-color: #851014;
+    }
+
+    .cta-btn-light:hover {
+        background-color: transparent;
+        border: 1px solid rgb(59, 59, 59);
+    }
+
+    .card-description:hover {
+        color: #e62429;
+    }
+
+    .body-card:hover {
+        background-color: #e62429;
+        transition: .5s ease;
+    }
+
+    .effect-comics {
+        transition: .3s ease-out;
+    }
+
+    .effect-comics:hover {
+        transform: translateY(-10px);
+        transition: .1s ease-in;
+    }
+
+    .movie-scenes, .article-comics {
+        grid-template-columns: 25% 25% 25% 25%;
+        overflow: hidden;
+    }
+
+    .slider_container {
+        grid-column-gap: 5px;
+    }
+
+    .card_v2 {
+        width: 140px;
+    }
+
+    .comics-layout {
+        overflow-x: visible;
+        overflow-y: hidden;
+    }
+
+    .main-footer-link a:hover {
+        color: #c3c3c3;
+    }
+
+    .main-footer-links {
+        grid-template-columns: 7% 45% 40%;
+        justify-content: space-between;
+    }
+
+    .icon-svg-gray-fill:hover {
+        fill: #fff;
+    }
+}
+
+@media (min-width: 1100px) {
+    .slider-image, .slider-image3, .slider-image4 {
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .slider-image2, .slider-image5 {
+        height: 100%;
+        background-position: top;
+        background-size: cover;
+    }
+
+    .slider_container {
+        grid-column-gap: 7px;
+    }
+
+    .card_v2 {
+        width: 160px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .slider_container {
+        grid-column-gap: 17px;
+    }
+    
+    .movie-scenes, .article-comics {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    .card_v2 {
+        width: 200px;
+    }
+
+    .title-content {
+        padding: 0;
+    }
+}
